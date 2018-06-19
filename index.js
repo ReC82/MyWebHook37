@@ -36,13 +36,13 @@ restService.post("/movie", function(req, res) {
       : "Seems like some problem. Speak again.";
   
   var req = new XMLHttpRequest();  
-  req.open('GET', 'http://www.allocine.fr/recherche/?q=' + speech, false);   
-  req.send(null);  
-  if(req.status == 200)  
+  //req.open('GET', 'http://www.allocine.fr/recherche/?q=' + speech, false);   
+  //req.send(null);  
+ /* if(req.status == 200)  
   {
      dump(req.responseText);
      speech = "Film Trouvé !";
-  }
+  }*/
   speech="Bien joué allociné !";
   return res.json({
     speech: speech,
