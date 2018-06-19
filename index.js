@@ -34,7 +34,11 @@ restService.post("/movie", function(req, res) {
     req.body.result.parameters.echoText
       ? req.body.result.parameters.echoText
       : "Seems like some problem. Speak again.";
+  const options = new URL('http://www.allocine.fr');
   
+  const req = http.request(options, (res) => {
+    speech = "This is a test";
+  });
   //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
   //var xhr = new XMLHttpRequest();
   //req.open('GET', 'http://www.allocine.fr/recherche/?q=' + speech, false);   
