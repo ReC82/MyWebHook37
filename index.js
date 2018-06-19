@@ -44,7 +44,7 @@ restService.post("/movie", function(req, res) {
      dump(req.responseText);
      speech = "Film Trouvé !";
   }*/
-  speech="Bien joué allociné !" + "A demain";
+  speech="Bien joué allociné !" + speech;
   return res.json({
     speech: speech,
     displayText: speech,
