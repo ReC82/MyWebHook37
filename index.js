@@ -35,7 +35,7 @@ restService.post("/movie", function(req, res) {
       ? req.body.result.parameters.echoText
       : "Seems like some problem. Speak again.";
   
-  //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+  var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
   //var xhr = new XMLHttpRequest();
   //req.open('GET', 'http://www.allocine.fr/recherche/?q=' + speech, false);   
   //req.send(null);  
